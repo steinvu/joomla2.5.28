@@ -2,7 +2,7 @@
 <extension type="component" version="2.5.28" method="upgrade">
 	<name>com_mycomp</name>
 	<author>Stein Van Uytven</author>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>My first component</description>
 	<files folder="components/com_mycomp">
 		<filename>mycomp.php</filename>
@@ -10,8 +10,9 @@
 	</files>
 	<administration>
 		<files folder="administrator/components/com_mycomp">
-		<filename>mycomp.php</filename>
-		<filename>index.html</filename>
-	</files>
+			<filename>mycomp.php</filename>
+			<filename>index.html</filename>
+		</files>
+		<menu link="option=com_mycomp">My Component: Mycomp</menu>
 	</administration>
 </extension>
