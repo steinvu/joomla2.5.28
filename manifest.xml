@@ -2,17 +2,24 @@
 <extension type="component" version="2.5.28" method="upgrade">
 	<name>com_mycomp</name>
 	<author>Stein Van Uytven</author>
-	<version>1.0.2</version>
-	<description>My first component</description>
+	<version>1.0.3</version>
+	<description>COM_MYCOMP_DESC</description>
 	<files folder="components/com_mycomp">
 		<filename>mycomp.php</filename>
 		<filename>index.html</filename>
 	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.com_mycomp.ini</language>
+	</languages>
 	<administration>
 		<files folder="administrator/components/com_mycomp">
 			<filename>mycomp.php</filename>
 			<filename>index.html</filename>
 		</files>
-                <menu>Mycomp</menu>
+		<languages folder="administrator/language/en-GB">
+			<language tag="en-GB">en-GB.com_mycomp.ini</language>
+			<language tag="en-GB">en-GB.com_mycomp.sys.ini</language>
+		</languages>
+                <menu link="option=com_mycomp">COM_MYCOMP_MENU</menu>
 	</administration>
 </extension>
