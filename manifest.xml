@@ -2,7 +2,7 @@
 <extension type="component" version="2.5.28" method="upgrade">
 	<name>com_mycomp</name>
 	<author>Stein Van Uytven</author>
-	<version>1.0.7</version>
+	<version>1.0.8</version>
 	<description>COM_MYCOMP_DESC</description>
 	<files folder="components/com_mycomp">
 		<filename>mycomp.php</filename>
@@ -22,6 +22,12 @@
 			<language tag="en-GB">en-GB.com_mycomp.ini</language>
 			<language tag="en-GB">en-GB.com_mycomp.sys.ini</language>
 		</languages>
-                <menu link="option=com_mycomp">COM_MYCOMP_MENU</menu>		
+                <menu link="option=com_mycomp">COM_MYCOMP_MENU</menu>	
+				<submenu>
+					<menu link="option=com_mycomp&amp;task=create">COM_MYCOMP_MENU_CREATE</menu>	
+					<menu link="option=com_mycomp&amp;task=listtask">COM_MYCOMP_MENU_LISTTASK</menu>	
+					<menu link="option=com_mycomp&amp;task=delete">COM_MYCOMP_MENU_DELETE</menu>	
+					<menu link="option=com_mycomp&amp;task=help">COM_MYCOMP_MENU_HELP</menu>	
+				</submenu>
 	</administration>
 </extension>

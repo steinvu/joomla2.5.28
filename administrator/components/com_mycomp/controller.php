@@ -17,4 +17,13 @@ class MyCompController extends JController{
 		echo JText::_('COM_MYCOMP_TASK_DELETE');
 	}
 
+	function listtask(){
+		echo JText::_('COM_MYCOMP_TASK_LISTTASK');
+	}	
+	
+	function help(){
+		echo JText::_('COM_MYCOMP_TASK_HELP');
+		echo '<h1>This is help task <input type="text">';
+	}
+		
 }

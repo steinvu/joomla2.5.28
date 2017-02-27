@@ -17,4 +17,5 @@ $controller->execute(JRequest::getCmd('task'));
 //if redirect set
 $controller->redirect();
 
+/**
 
