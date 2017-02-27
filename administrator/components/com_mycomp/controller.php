@@ -21,6 +21,19 @@ class MyCompController extends JController{
 		$doc->addStyleSheet(JURI::root().'media/com_mycomp/css/backend_create_task.css');
 		$doc->addScript(JURI::root().'media/com_mycomp/js/backend_createtask.js');
 		JToolbarHelper::Title('Create task title!','createtask.png');
+
+			//Create Database Object
+			$db=JFactory::getDBO();
+			//Set your Query
+			$sql="INSERT INTO `#__mycomp_posts` (`title`,`body`) VALUES('First post','this is post body');";
+			$db->setQuery($sql);
+			//Execute your Query
+			$db->query();
+/*
+//short form for writing query and executing it
+$db=JFactory::getDBO();
+$db->setQuery("SELECT * from #__users")->query();
+*/
 		echo '<div id="welcome">'. JText::_('COM_MYCOMP_TASK_CREATE') .'</div>';
 	}
 	
