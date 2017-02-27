@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors',1);
 defined('_JEXEC') or die('Access denied');
 
 jimport('joomla.application.component.controller');
@@ -14,7 +16,7 @@ Class MyCompController extends JController{
 		$doc=JFactory::getdocument();
 		$doc->addStyleSheet(JURI::root().'media/com_mycomp/css/frontend_create_task.css');
 		$doc->addScript(JURI::root().'media/com_mycomp/js/frontend_createtask.js');
-		echo '<div id="Welcome">create function called</div>';
+		echo '<div id="welcome">create function called</div>';
 		}
 		
 	function delete(){

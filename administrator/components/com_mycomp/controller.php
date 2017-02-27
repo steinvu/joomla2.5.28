@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors',1);
+
 defined('_JEXEC') or die('access denied');
 
 jimport ('joomla.application.component.controller');
@@ -15,7 +18,7 @@ class MyCompController extends JController{
 		$doc->addStyleSheet(JURI::root().'media/com_mycomp/css/backend_create_task.css');
 		$doc->addScript(JURI::root().'media/com_mycomp/js/backend_createtask.js');
 		JToolbarHelper::Title('Create task title!');
-		echo '<div id="Welcome">'. JText::_('COM_MYCOMP_TASK_CREATE') .'</div>';
+		echo '<div id="welcome">'. JText::_('COM_MYCOMP_TASK_CREATE') .'</div>';
 
 	}
 	
