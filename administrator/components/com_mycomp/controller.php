@@ -11,8 +11,12 @@ class MyCompController extends JController{
 	}
 	
 	function create(){
+		$doc=JFactory::getdocument();
+		$doc->addStyleSheet(JURI::root().'media/com_mycomp/css/backend_create_task.css');
+		$doc->addScript(JURI::root().'media/com_mycomp/js/backend_createtask.js');
 		JToolbarHelper::Title('Create task title!');
-		echo JText::_('COM_MYCOMP_TASK_CREATE');
+		echo '<div id="Welcome">'. JText::_('COM_MYCOMP_TASK_CREATE') .'</div>';
+
 	}
 	
 	function delete(){
